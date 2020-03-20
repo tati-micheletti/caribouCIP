@@ -34,7 +34,7 @@ times <- list(start = 2011, end = 2100)
 
 parameters <- list(
   "caribouCIP" = list(
-     "predictionInterval" = 30,
+     "predictionInterval" = 40,
      "includeLastYear" = TRUE
   )
 )
