@@ -32,7 +32,7 @@ defineModule(sim, list(
                     paste0("If the ratio between last-first years devided by the ",
                            "predictionInterval is not an integer, should predict for the last year?"))
   ),
-  inputObjects = bind_rows(
+  inputObjects = bindrows(
     expectsInput(objectName = "habitatSuitabilityIndex", objectClass = "list", 
                  desc = "List of YearXXXX of caribou HSI predictions", 
                  sourceURL = NA), 
@@ -40,7 +40,7 @@ defineModule(sim, list(
                  desc = "List of rasters per year, indicating the probability of presence of Caribous", 
                  sourceURL = NA)
   ),
-  outputObjects = bind_rows(
+  outputObjects = bindrows(
     createsOutput(objectName = "caribouCoInformedPredictions", objectClass = "list", 
                   desc = paste0("List of years (YearXXXX) of a unified caribou co-informed ",
                                 "prediction map based on a resource selection (collar based) and ",
